@@ -5,8 +5,8 @@ import "@/styles/globals.css"
 
 export const metadata: Metadata = {
   title: {
-    default: "Arc",
-    template: "Arc | %s",
+    default: "Synapse",
+    template: "Synapse | %s",
   },
   description: "",
   verification: {
