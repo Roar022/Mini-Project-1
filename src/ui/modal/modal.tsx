@@ -1,28 +1,31 @@
-import React from "react"
+//   "use client"
+// import React from "react"
 
-import Rodal from "rodal"
+// import Rodal from "rodal"
 
-import { useModal } from "@/providers"
+// import { useModal } from "@/providers"
 
-import "rodal/lib/rodal.css"
+// import "rodal/lib/rodal.css"
 
-interface ModalProps {
-  modalId: ModalIds
-  children: React.ReactNode
-}
+// interface ModalProps {
+//   modalId: ModalIds
+//   children: React.ReactNode
+// }
 
-const Modal: React.FC<ModalProps> = ({ modalId, children }) => {
-  const { isOpen, closeModal } = useModal(modalId)
+// const Modal: React.FC<ModalProps> = ({ modalId, children }) => {
+//   //const { isOpen, closeModal } = useModal(modalId)
 
-  return (
-    <Rodal
-      visible={isOpen}
-      onClose={closeModal}
-      animation="slideUp"
-    >
-      {children}
-    </Rodal>
-  )
-}
+//   return (
+//     <></>
+//     //<Rodal
+//     //visible={isOpen}
+//     //onClose={closeModal}
+//     //animation="slideUp"
+//     //className=""
+//     //>
+//     //{children}
+//     //</Rodal>
+//   )
+// }
 
-export default Modal
+// export default Modal
