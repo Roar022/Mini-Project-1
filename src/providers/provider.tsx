@@ -2,6 +2,9 @@
 
 import React, { useEffect, useState } from "react"
 
+import { WagmiProvider } from "@/lib"
+
+import { AuthProvider } from "./auth"
 import { ModalProvider } from "./modal"
 import { UserProvider } from "./user"
 
@@ -17,15 +20,19 @@ const Providers: React.FC<ProvidersProps> = ({ children }) => {
   }, [])
 
   if (!mounted) {
-    return <>{children}</>
+    return <WagmiProvider>{children}</WagmiProvider>
   }
 
   return (
-    <ModalProvider>
-      <UserProvider>
-        <>{children}</>
-      </UserProvider>
-    </ModalProvider>
+    <WagmiProvider>
+      <ModalProvider>
+        <UserProvider>
+          <AuthProvider>
+            <>{children}</>
+          </AuthProvider>
+        </UserProvider>
+      </ModalProvider>
+    </WagmiProvider>
   )
 }
 
