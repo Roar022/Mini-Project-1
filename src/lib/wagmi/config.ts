@@ -9,7 +9,7 @@ const config = createConfig(
     transports: {
       [KiiChain.id]: http(),
     },
-    appName: "Arc",
+    appName: "Synapse",
     walletConnectProjectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID as string,
   })
 )

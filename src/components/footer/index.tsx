@@ -29,7 +29,7 @@ const Footer: React.FC<FooterProps> = ({ footerLogo, footerLinks, footerText }) 
           >
             <img
               src={"/logo-white.svg"}
-              className="w-20"
+              className="w-35"
               alt={footerLogo.alt}
             />
             {/* <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">

@@ -43,7 +43,7 @@ const AiChatPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center p-4">
       <div className="w-full max-w-2xl rounded-lg bg-dark-2 p-6 shadow-md">
-        <h1 className="mb-6 text-center text-3xl font-bold">Arc Assistant</h1>
+        <h1 className="mb-6 text-center text-3xl font-bold">Synapse Assistant</h1>
         <div className="mb-6 h-96 overflow-y-auto rounded-lg bg-light-2/25 p-4 text-white">
           {completion && (
             <div className="text-white">

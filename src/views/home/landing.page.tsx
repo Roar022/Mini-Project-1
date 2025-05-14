@@ -6,7 +6,7 @@ import { AiFillThunderbolt } from "react-icons/ai"
 
 import { ContractStore } from "@/data/contracts"
 
-import Logo from "@/assets/images/arc-logo.webp"
+import Logo from "@/assets/images/SYNAPSE.svg"
 import { BackgroundCellCore } from "@/components/background-cell"
 import Footer from "@/components/footer"
 import { Carousel } from "@/components/infinite-movement"
@@ -39,14 +39,14 @@ export const footerLinks = [
 
 export const footerLogo = {
   src: Logo.src,
-  alt: "Arc",
-  text: "Arc",
+  alt: "Synapse",
+  text: "Synapse",
   href: "/",
 }
 
 export const footerText = {
   year: 2024,
-  trademark: "Arc™",
+  trademark: "Synapse™",
   href: "/",
 }
 
@@ -55,35 +55,35 @@ const blogContent = [
     date: "14th September, 2023",
     title: "Mastering Smart Contract Development with AI Assistance",
     description:
-      "Explore how Arc leverages AI to streamline smart contract development. From AI-powered code suggestions to automatic documentation generation, dive into the tools that make smart contract creation faster and more reliable.",
+      "Explore how Synapse leverages AI to streamline smart contract development. From AI-powered code suggestions to automatic documentation generation, dive into the tools that make smart contract creation faster and more reliable.",
     image: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*JUwAzE4aWU5k0VpMIWyomA.png",
   },
   {
     date: "1st September, 2023",
     title: "Dynamic Import Resolution in Smart Contracts Explained",
     description:
-      "Learn how Arc's dynamic import resolution feature simplifies multi-file contract compilation and standard imports, making it easier for developers to manage dependencies in their smart contracts.",
+      "Learn how Synapse's dynamic import resolution feature simplifies multi-file contract compilation and standard imports, making it easier for developers to manage dependencies in their smart contracts.",
     image: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*bXfJKdiXjtkKG899alj3ow.png",
   },
   {
     date: "20th August, 2023",
     title: "Enhancing Security: AI-Powered Code Vulnerability Checks",
     description:
-      "Security is a top priority in blockchain development. In this article, we explore how Arc’s AI-powered code vulnerability checker helps developers catch potential issues early, ensuring safer smart contracts.",
+      "Security is a top priority in blockchain development. In this article, we explore how Synapse AI-powered code vulnerability checker helps developers catch potential issues early, ensuring safer smart contracts.",
     image: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*7rFLQSKSIgfyPMWc-IIZiA.jpeg",
   },
   {
     date: "10th August, 2023",
-    title: "One-Click Deployment to Kiichain: How Arc Simplifies Smart Contract Launches",
+    title: "One-Click Deployment to Kiichain: How Synapse Simplifies Smart Contract Launches",
     description:
-      "Deploying smart contracts has never been easier. Learn how Arc integrates one-click deployment and a testnet faucet to simplify the process, getting your contracts live on Kiichain in seconds.",
+      "Deploying smart contracts has never been easier. Learn how Synapse integrates one-click deployment and a testnet faucet to simplify the process, getting your contracts live on Kiichain in seconds.",
     image: "https://blog.kiiglobal.io/wp-content/uploads/2024/04/safeguarding-the-digital-financial-future.webp",
   },
   {
     date: "5th July, 2023",
-    title: "Comprehensive Contract Management with Arc’s Dashboard",
+    title: "Comprehensive Contract Management with Synapse Dashboard",
     description:
-      "Arc's dashboard allows users to manage and monitor deployed contracts efficiently. In this article, we walk through the features and how you can use them to track, manage, and optimize your smart contracts.",
+      "Synapse's dashboard allows users to manage and monitor deployed contracts efficiently. In this article, we walk through the features and how you can use them to track, manage, and optimize your smart contracts.",
     image: "https://blog.kiiglobal.io/wp-content/uploads/2024/07/KiiChain-launches-testnet-2.webp",
   },
 ]
@@ -110,7 +110,7 @@ const HomeLandingView = () => {
             {isFlipWordsComplete ? (
               <>
                 <div className="mx-auto mt-4 max-w-2xl text-center text-base font-normal italic text-neutral-300">
-                  Transform smart contract development with Arc. Write, deploy, and manage contracts effortlessly with
+                  Transform smart contract development with Synapse. Write, deploy, and manage contracts effortlessly with
                   AI-driven tools and one-click deployment to Kiichain’s testnet.
                 </div>
                 <Button

@@ -34,8 +34,23 @@ const FileManager = dynamic(() => import("@/components/file-manager").then((mod)
 
 const IDE = () => {
   const { rootDir, selectedFile, setRootDir, setSelectedFile, activeFiles, setActiveFiles, handleFileUpdate } = useIDE()
-  const searchparams = useSearchParams()
-  const y = searchparams.get("content")
+  // const searchparams = useSearchParams()
+  // const y = searchparams.get("content")
+  useEffect(() => {
+  const stored = sessionStorage.getItem("ide-content")
+  if (stored) {
+    try {
+      const parsed: Directory = JSON.parse(stored)
+      setRootDir(parsed)
+      setSelectedFile(parsed.files[0])
+      setActiveFiles([parsed.files[0]])
+      sessionStorage.removeItem("ide-content")
+    } catch (error) {
+      console.error("Invalid IDE content:", error)
+    }
+  }
+}, [])
+
   const handleTabSelect = (file: File) => {
     setSelectedFile(file)
   }
@@ -48,12 +63,12 @@ const IDE = () => {
     if (selectedFile?.id === file.id && activeFiles && activeFiles.length > 1) setSelectedFile(activeFiles[0])
   }
 
-  useEffect(() => {
-    if (y != null) {
-      const z: Directory = JSON.parse(y)
-      setRootDir(z)
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (y != null) {
+  //     const z: Directory = JSON.parse(y)
+  //     setRootDir(z)
+  //   }
+  // }, [])
 
   useEffect(() => {
     if (activeFiles && activeFiles.length == 0) setSelectedFile(undefined)

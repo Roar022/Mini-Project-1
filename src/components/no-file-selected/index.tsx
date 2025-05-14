@@ -4,7 +4,7 @@ const NoFileSelected = () => {
   return (
     <div className="h-full w-full bg-[#1e1e1e] p-10 md:p-11">
       <div className="mt-5">
-        <h1 className="text-3xl font-bold">ARC's AI-Powered Code Editor</h1>
+        <h1 className="text-3xl font-bold">Synapse's AI-Powered Code Editor</h1>
         <h3 className="text-xl font-light italic">Revolutionizing the Way You Code</h3>
       </div>
       <div className="mt-8">

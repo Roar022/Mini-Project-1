@@ -138,7 +138,7 @@ const DashboardPage = () => {
           <div className="col-span-3 flex w-full flex-col">
             {!isConnected ? (
               <div className="flex w-full flex-col items-center justify-center">
-                <h1 className="text-4xl font-semibold">Welcome to KiiChain</h1>
+                <h1 className="text-4xl font-semibold">Welcome to Synapse</h1>
                 <p className="mt-4 text-lg">Sign in to get started</p>
               </div>
             ) : (

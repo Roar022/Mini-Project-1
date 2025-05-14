@@ -40,9 +40,9 @@ export function FeaturesSectionDemo() {
       className: "col-span-1 lg:col-span-3 lg:border-r dark:border-neutral-800",
     },
     {
-      title: "One-Click Deployment to Kiichain",
+      title: "One-Click Deployment to Testnet",
       description:
-        "Deploy your smart contracts to the Kiichain testnet with a single click. Our platform integrates with a testnet faucet to ensure you have the necessary tokens for deployment.",
+        "Deploy your smart contracts to the testnet with a single click. Our platform integrates with a testnet faucet to ensure you have the necessary tokens for deployment.",
       skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
     },
@@ -56,7 +56,7 @@ export function FeaturesSectionDemo() {
         </h4>
 
         <div className="mx-auto my-4 max-w-2xl text-center text-sm font-normal text-neutral-500 lg:text-base dark:text-neutral-300">
-          Discover how Arc transforms smart contract development with cutting-edge AI features. From seamless code
+          Discover how Synapse transforms smart contract development with cutting-edge AI features. From seamless code
           creation to comprehensive contract management, our platform provides everything you need for efficient and
           secure smart contract deployment.
         </div>

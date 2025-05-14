@@ -77,7 +77,7 @@ const search = [
   {
     id: 16,
     key: "deploy",
-    name: "How to deploy to Kiichain",
+    name: "How to deploy to Testnet",
   },
   {
     id: 17,

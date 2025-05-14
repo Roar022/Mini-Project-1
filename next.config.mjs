@@ -1,11 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   images: {
-    domains: ["ipfs.io", "google.com", "unsplash.com"],
     remotePatterns: [
       {
         hostname: process.env.NEXT_IMAGE_DOMAIN ?? "http://localhost:3000",
+      },
+      {
+        hostname: "miro.medium.com",
+      },
+      {
+        hostname: "blog.kiiglobal.io",
+      },
+      {
+        hostname: "assets.aceternity.com",
+      },
+      {
+        hostname: "example.com",
       },
     ],
   },
@@ -19,6 +29,11 @@ const nextConfig = {
   },
   experimental: {
     scrollRestoration: false,
+  },
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false, net: false, tls: false }
+    config.externals.push("pino-pretty", "encoding")
+    return config
   },
 }
 

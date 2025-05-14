@@ -83,30 +83,55 @@ export const CustomizeModal = ({
     }
   }, [title, messages.length])
 
+  // const handleMoveToEditor = (content: string) => {
+  //   const tempFile: File = {
+  //     id: `temp-${Date.now()}`,
+  //     name: `temp-${Date.now()}.sol`,
+  //     type: "file",
+  //     parentId: "0",
+  //     depth: 1,
+  //     content,
+  //   }
+  //   const init: Directory = {
+  //     id: "0",
+  //     name: "root",
+  //     type: "directory",
+  //     depth: 0,
+  //     dirs: [],
+  //     files: [tempFile],
+  //     parentId: "0",
+  //   }
+  //   const varr = JSON.stringify(init)
+  //   router.push(`/ide?content=${varr}`, {
+  //     scroll: true,
+  //   })
+  //   console.log("dekh lo ", varr)
+  // }
   const handleMoveToEditor = (content: string) => {
-    const tempFile: File = {
-      id: `temp-${Date.now()}`,
-      name: `temp-${Date.now()}.sol`,
-      type: "file",
-      parentId: "0",
-      depth: 1,
-      content,
-    }
-    const init: Directory = {
-      id: "0",
-      name: "root",
-      type: "directory",
-      depth: 0,
-      dirs: [],
-      files: [tempFile],
-      parentId: "0",
-    }
-    const varr = JSON.stringify(init)
-    router.push(`/ide?content=${varr}`, {
-      scroll: true,
-    })
-    console.log("dekh lo ", varr)
+  const tempFile: File = {
+    id: `temp-${Date.now()}`,
+    name: `temp-${Date.now()}.sol`,
+    type: "file",
+    parentId: "0",
+    depth: 1,
+    content,
   }
+  const init: Directory = {
+    id: "0",
+    name: "root",
+    type: "directory",
+    depth: 0,
+    dirs: [],
+    files: [tempFile],
+    parentId: "0",
+  }
+
+  // Save to sessionStorage
+  sessionStorage.setItem("ide-content", JSON.stringify(init))
+
+  // Navigate without long query string
+  router.push("/ide")
+}
 
   return (
     <>
